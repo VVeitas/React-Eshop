@@ -13,8 +13,11 @@
   font-weight: bolder;
   border: none;
   cursor: pointer;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
+=======
+>>>>>>> 57c8c303f77356fe58d4253e0deff11adec570c2
 
   &:hover {
     background-color: white;
@@ -31,6 +34,7 @@
       border: none;
     }
   }
+<<<<<<< HEAD
 
   &.inverted {
     background-color: white;
@@ -43,4 +47,6 @@
       border: none;
     }
   }
+=======
+>>>>>>> 57c8c303f77356fe58d4253e0deff11adec570c2
 }

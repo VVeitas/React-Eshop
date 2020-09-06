@@ -1,16 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import { connect } from 'react-redux';
+=======
+>>>>>>> 57c8c303f77356fe58d4253e0deff11adec570c2
 
 import { auth } from '../../firebase/firebase.utils';
 
 import { ReactComponent as Logo } from '../../assets/original.svg';
 
 import './header.styles.scss';
+<<<<<<< HEAD
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../card-dropdown/card-dropdown.component';
 
 const Header = ({ currentUser, hidden }: any) => (
+=======
+
+const Header = ({ currentUser }: any) => (
+>>>>>>> 57c8c303f77356fe58d4253e0deff11adec570c2
   <div className='header'>
     <Link className='logo-container' to='/'>
       <Logo className='logo' />
@@ -31,6 +39,7 @@ const Header = ({ currentUser, hidden }: any) => (
           SIGN IN
         </Link>
       )}
+<<<<<<< HEAD
       <CartIcon />
     </div>
     {hidden ? null : <CartDropdown />}
@@ -43,3 +52,10 @@ const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }: any) => ({
 });
 
 export default connect(mapStateToProps)(Header);
+=======
+    </div>
+  </div>
+);
+
+export default Header;
+>>>>>>> 57c8c303f77356fe58d4253e0deff11adec570c2

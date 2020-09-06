@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { connect } from 'react-redux';
 
 import './collection-item.styles.scss';
@@ -32,3 +33,29 @@ const mapDispatchToProps = (dispatch: any) => ({
 });
 
 export default connect(null, mapDispatchToProps)(CollectionItem);
+=======
+
+import './collection-item.styles.scss';
+
+interface CollectionItemProps {
+  name: string;
+  price: number;
+  imageUrl: string;
+}
+
+const CollectionItem: React.FC<CollectionItemProps> = ({
+  name,
+  price,
+  imageUrl,
+}) => (
+  <div className='collection-item'>
+    <div className='image' style={{ backgroundImage: `url(${imageUrl})` }} />
+    <div className='collection-footer'>
+      <span className='name'>{name}</span>
+      <span className='price'>{price}</span>
+    </div>
+  </div>
+);
+
+export default CollectionItem;
+>>>>>>> 57c8c303f77356fe58d4253e0deff11adec570c2
